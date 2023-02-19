@@ -9,7 +9,7 @@ export default function Hello() {
             marginBottom : '30px',
             opacity : 0.5,
           }}>
-            Hello</h1>
+            Growth VOCA</h1>
         <div className={styles.box}>Hello</div>
       </div>
     );
