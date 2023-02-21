@@ -1,16 +1,23 @@
 import styles from "./Hello.module.css"
 
 export default function Hello() {
+  function showName() {
+    console.log("Sue");
+  }
+  function showAge(age) {
+    console.log(age);
+  }
+  
   return (
       <div>
-        <h1 style={{
-            color : '#f00',
-            borderRight : '2px solid #000',
-            marginBottom : '30px',
-            opacity : 0.5,
-          }}>
-            Growth VOCA</h1>
-        <div className={styles.box}>Hello</div>
+        <h1>Growth VOCA</h1>
+        <button onClick={showName}>Show name</button>
+        <button onClick={() => {
+          showAge(10)
+        }}>Show age</button>
+        <input type="text" onChange={(e)=>{
+          console.log(e.target.value)
+        }} />
       </div>
     );
 }
