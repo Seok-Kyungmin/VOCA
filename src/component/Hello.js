@@ -1,23 +1,17 @@
 import styles from "./Hello.module.css"
 
 export default function Hello() {
-  function showName() {
-    console.log("Sue");
-  }
-  function showAge(age) {
-    console.log(age);
+  let name = "Mike"
+
+  function changeName() {
+    name = name === "Mike" ? "Jane" : "Mike";
   }
   
   return (
       <div>
-        <h1>Growth VOCA</h1>
-        <button onClick={showName}>Show name</button>
-        <button onClick={() => {
-          showAge(10)
-        }}>Show age</button>
-        <input type="text" onChange={(e)=>{
-          console.log(e.target.value)
-        }} />
+        <h1>state</h1>
+        <h2>{name}</h2>
+        <button onClick={changeName}>Change</button>
       </div>
     );
 }
