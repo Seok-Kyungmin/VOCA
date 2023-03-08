@@ -4,7 +4,7 @@ export default function Hello() {
   let name = "Mike"
 
   function changeName() {
-    name = name === "Mike" ? "Jane" : "Mike";
+    name = name === "Mike" ? "Lia" : "Mike";
   }
   
   return (
